@@ -1,6 +1,24 @@
+/*COLOR PALETTE MADE FROM COOLORS */
+
+/* CSS
+--metallic-seaweed: hsla(191, 46%, 41%, 1);
+--yellow-crayola: hsla(51, 91%, 75%, 1);
+--copper-crayola: hsla(20, 71%, 65%, 1);
+--indian-red: hsla(0, 57%, 57%, 1);
+--eerie-black: hsla(0, 0%, 10%, 1);
+*/
+
+/* fonts
+font-family: 'Josefin Slab', serif;
+font-family: 'Shrikhand', cursive;
+*/
+
 * {
     margin: 0;
     padding: 0;
+}
+body {
+    background-color: whitesmoke;
 }
 #container {
     display: flex;
@@ -8,16 +26,15 @@
     justify-content: space-between;
 }
 .card {
+    background-color: whitesmoke;
     width: 350px;
-    background-color: skyblue;
     margin: 10px;
-    border-color: tomato;
-    border-radius: 5px;
-    border-style: solid;
+    border-color: lightblue;
+    border-radius: 1px;
+    border-style: dotted;
     text-align: center;
-}
-.imgWrapper {
-    
+    box-shadow: 5px 5px 5px hsla(191, 46%, 41%, 1);
+    font-family: 'Josefin Slab', serif;
 }
 img {
     object-fit: cover;
@@ -25,4 +42,49 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+}
+.imgWrapper {
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#headerImage {
+    height: 350px;
+    background-image: url('http://blog.davidstea.com/en/wp-content/uploads/2015/05/LooseTea_BLOG.jpg');
+    background-size: cover;
+    display: flex;
+}
+.secondCardSection {
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 0 5px 0;
+}
+.thirdCardSection {
+    font-weight: bold;
+    padding: 5px;
+}
+h2 {
+    background-color: hsla(191, 46%, 41%, 1);
+    padding: 5px;
+    margin-bottom: 5px;
+    text-transform: lowercase;
+    font-weight: bold;
+}
+.description {
+    text-align: justify;
+    padding: 15px;
+}
+h4 {
+    background-color: #757575;
+    color: hsla(51, 91%, 75%, 1);
+    padding: 10px;
+    margin: 0 0 10px 0;
+}
+h1 {
+    font-family: 'Shrikhand', cursive;
+    text-align: center;
+    align-self: flex-end;
+    padding: 50px;
+}
+p {
+    color: hsla(0, 0%, 10%, 1);
 }
